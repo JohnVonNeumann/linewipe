@@ -1,6 +1,6 @@
+import json
 from poloniex import Poloniex
-from flask import Flask
-from flask import jsonify
+from flask import Flask, jsonify, Response
 polo = Poloniex()
 app = Flask(__name__)
 
@@ -9,7 +9,7 @@ def post():
   lbc_asks = polo.returnOrderBook('BTC_LBC')['asks']
   json_asks = jsonify(lbc_asks)
   for each in json_asks:  
-    print(each)
+    return Response(json.dumps(each), mimetype='application/json') 
 
 def lbcAsks(self):
   lbc_asks = polo.returnOrderBook('BTC_LBC')['asks']
@@ -23,4 +23,4 @@ def lbcBids(self):
     return jsonify(each)
 
 if __name__ == "__main__":
-  app.run()
+  app.run(debug = True, port = 5000)
