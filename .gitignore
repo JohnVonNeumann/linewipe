@@ -1,2 +1,4 @@
+*.swp
 .env
 venv36
+.ropeproject
