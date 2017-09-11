@@ -22,5 +22,4 @@ A simple screen/scanner of Crypto markets, was gonna build it for ASX listed equ
 But in all seriousness, this is the flow I can see so far, naturally, this will be refactored into something a bit more illustrious, the intention is to build a screener that can provide adequate levels of detail for investment decisions, ie: Whether or not the asset is being actively developed, how it is going in the media, blah blah. I guess in reality it's Algorithmic trading. Or, a bad attempt at it.
 
 ## Addition items that have come up as I have developed
-* Occasionally, the API service being called will reject the request due to hitting API call limits, a cached response here would be great, in order to continue developing without impacting dev flow. This appears to be a fairly common problem, there is "requests-cache" to solve this.
-
+* Occasionally, the API service being called will reject the request due to hitting API call limits, a cached response here would be great, in order to continue developing without impacting dev flow. This appears to be a fairly common problem, there is "requests-cache" to solve this. DONE

@@ -11,7 +11,6 @@ response_raw =  requests.get('https://api.coinmarketcap.com/v1/ticker/')
 headers = response_raw.headers
 response = response_raw.json()
 #import ipdb; ipdb.set_trace()
-#print(response)
 
 tickers = []
 ticker_count = 0
